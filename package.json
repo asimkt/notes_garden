@@ -67,5 +67,8 @@
     "js-watch": "npm run js-build -- --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
   },
-  "version": "0.0.4"
+  "version": "0.0.4",
+  "dependencies": {
+    "html-import-partials": "^1.0.1"
+  }
 }
