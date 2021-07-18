@@ -2,28 +2,63 @@
 
 // Customization
 
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
-
-/*
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 // 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
+// NOTE: Don't use brand variables directly. use re-assigned bulma variables
+// Brand variables
+// Brand colors:
+$bg-main: #fff;
+$bg-main-inverted: #18181C;
+$bg-sub: #FAFAFC;
+$bg-sub-inverted: #262626;
+$text-main: #18181C;
+$text-main-inverted: #FAFAFC; 
+$text-sub: #5D5D67;
+$text-sub-inverted: #FFFFFF;
+$link: #2380ED;
+$link-inverted: #6D9EFF;
+$border: #E5E5E5;
+$border-inverted: #353535;
+// Brand shadows:
+$card-drop-shadow: 0px 12px 32px rgba(27, 25, 36, 0.12);
+$card-drop-elevate: 0px 12px 32px #1A1A1A;
+// Brand font-family
+$custom-font-family: 'IBM Plex Sans';
 
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
+// Updating bulma variables
+// Updating bulma variables initial values
+// Update the sans-serif font family
+$family-sans-serif: $custom-font-family, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+
+// Updating bulma variables derived values
+$primary: $text-main;
+$primary-invert: $text-main-inverted;
+// Same naming happens because our design (figma) tokens and Bulma have same variables.
+$border: $border;
+$text: $text-main;
+$text-invert: $text-main-inverted;
+$text-light: $text-sub;
+$link: $link;
+$shadow: $card-drop-shadow;
+
+$body-background-color: $bg-sub;
+
+
 
 // 4. Import the rest of Bulma
-*/
 
 @import "../node_modules/bulma/bulma";
+
+// // Import only what you need from Bulma
+// @import "../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../node_modules/bulma/sass/base/_all.sass";
+// @import "../node_modules/bulma/sass/elements/button.sass";
+// @import "../node_modules/bulma/sass/elements/container.sass";
+// @import "../node_modules/bulma/sass/elements/title.sass";
+// @import "../node_modules/bulma/sass/form/_all.sass";
+// @import "../node_modules/bulma/sass/components/navbar.sass";
+// @import "../node_modules/bulma/sass/layout/hero.sass";
+// @import "../node_modules/bulma/sass/layout/section.sass";
