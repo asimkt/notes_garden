@@ -1,0 +1,11 @@
+// TODO: Split to different files if grow larger
+// Tags.
+.tag:not(body) {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+a.tag:hover {
+    border: $border;
+    text-decoration: none;
+    color: $link;
+}

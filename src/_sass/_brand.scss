@@ -1,0 +1,21 @@
+// NOTE: Don't use brand variables directly until necessary. use re-assigned bulma variables
+
+// Brand variables
+// Brand colors:
+$bg-main: #fff;
+$bg-main-inverted: #18181C;
+$bg-sub: #FAFAFC;
+$bg-sub-inverted: #262626;
+$text-main: #18181C;
+$text-main-inverted: #FAFAFC; 
+$text-sub: #5D5D67;
+$text-sub-inverted: #FFFFFF;
+$link: #2380ED;
+$link-inverted: #6D9EFF;
+$border: #E5E5E5;
+$border-inverted: #353535;
+// Brand shadows:
+$card-drop-shadow: 0px 12px 32px rgba(27, 25, 36, 0.12);
+$card-drop-elevate: 0px 12px 32px #1A1A1A;
+// Brand font-family
+$custom-font-family: 'IBM Plex Sans';

@@ -1,0 +1,22 @@
+// Updating bulma variables
+
+// 1. Updating bulma variables initial values
+$family-sans-serif: $custom-font-family, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// 2. Updating bulma basic variables derived values
+$primary: $text-main;
+$primary-invert: $text-main-inverted;
+// Same naming with our brand happens because our design (figma) tokens and Bulma have same variables.
+$border: $border;
+$text: $text-main;
+$text-invert: $text-main-inverted;
+$text-light: $text-sub;
+$link: $link;
+$shadow: $card-drop-shadow;
+
+$body-background-color: $bg-sub;
+
+
+// 3. Bulma component customization
+$tag-background-color: $bg-main;
+$tag-radius: 8px;

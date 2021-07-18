@@ -3,54 +3,16 @@
 // Customization
 
 // 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
 
 // 2. Set your own initial variables
-// NOTE: Don't use brand variables directly. use re-assigned bulma variables
-// Brand variables
-// Brand colors:
-$bg-main: #fff;
-$bg-main-inverted: #18181C;
-$bg-sub: #FAFAFC;
-$bg-sub-inverted: #262626;
-$text-main: #18181C;
-$text-main-inverted: #FAFAFC; 
-$text-sub: #5D5D67;
-$text-sub-inverted: #FFFFFF;
-$link: #2380ED;
-$link-inverted: #6D9EFF;
-$border: #E5E5E5;
-$border-inverted: #353535;
-// Brand shadows:
-$card-drop-shadow: 0px 12px 32px rgba(27, 25, 36, 0.12);
-$card-drop-elevate: 0px 12px 32px #1A1A1A;
-// Brand font-family
-$custom-font-family: 'IBM Plex Sans';
+@import "./brand";
 
-// Updating bulma variables
-// Updating bulma variables initial values
-// Update the sans-serif font family
-$family-sans-serif: $custom-font-family, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-
-
-// Updating bulma variables derived values
-$primary: $text-main;
-$primary-invert: $text-main-inverted;
-// Same naming happens because our design (figma) tokens and Bulma have same variables.
-$border: $border;
-$text: $text-main;
-$text-invert: $text-main-inverted;
-$text-light: $text-sub;
-$link: $link;
-$shadow: $card-drop-shadow;
-
-$body-background-color: $bg-sub;
-
-
+// 3. Bulma variables overwrites with our brand variables
+@import "./bulma_overwrites";
 
 // 4. Import the rest of Bulma
-
-@import "../node_modules/bulma/bulma";
+@import "../../node_modules/bulma/bulma";
 
 // // Import only what you need from Bulma
 // @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -62,3 +24,5 @@ $body-background-color: $bg-sub;
 // @import "../node_modules/bulma/sass/components/navbar.sass";
 // @import "../node_modules/bulma/sass/layout/hero.sass";
 // @import "../node_modules/bulma/sass/layout/section.sass";
+
+@import "./custom";

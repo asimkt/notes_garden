@@ -2676,8 +2676,8 @@ a.box:active {
 
 .tag:not(body) {
   align-items: center;
-  background-color: whitesmoke;
-  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 8px;
   color: #18181C;
   display: inline-flex;
   font-size: 0.75rem;
@@ -2774,9 +2774,9 @@ a.box:active {
       height: 50%;
       width: 1px; }
     .tag:not(body).is-delete:hover, .tag:not(body).is-delete:focus {
-      background-color: #e8e8e8; }
+      background-color: #f2f2f2; }
     .tag:not(body).is-delete:active {
-      background-color: #dbdbdb; }
+      background-color: #e6e6e6; }
   .tag:not(body).is-rounded {
     border-radius: 290486px; }
 
@@ -7112,3 +7112,12 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
+.tag:not(body) {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+a.tag:hover {
+  border: #E5E5E5;
+  text-decoration: none;
+  color: #2380ED; }
