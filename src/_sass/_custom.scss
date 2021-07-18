@@ -4,8 +4,39 @@
     padding-left: 1em;
     padding-right: 1em;
 }
+
 a.tag:hover {
     border: $border;
     text-decoration: none;
     color: $link;
+}
+
+// Titles using major third
+.title.is-1 {
+    // font-size: 2.488rem;
+    font-size: 2.441rem;
+}
+.title.is-2 {
+    // font-size: 2.074rem;
+    font-size: 1.953rem;
+}
+.title.is-3 {
+    // font-size: 1.728rem;
+    font-size: 1.563rem;
+}
+.title.is-4 {
+    // font-size: 1.44rem;
+    font-size: 1.25rem;
+}
+.title.is-5 {
+    // font-size: 1.2rem;
+    font-size: 1rem;
+}
+.title.is-6 {
+    // font-size: 1rem;
+    font-size: 0.8rem;
+}
+.title.is-7 {
+    // font-size: 0.833rem;
+    font-size: 0.64rem;
 }
