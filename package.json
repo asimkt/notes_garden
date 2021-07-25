@@ -67,7 +67,8 @@
     "js-watch": "npm run js-build -- --watch",
     "html-pages": "html-import-partials src/pages/*.html -o build/pages",
     "html-watch-pages": "npm run html-pages  -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch html-watch-pages"
+    "move-file": "cp ./src/index.html ./build && cp -R ./src/img ./build/img",
+    "start": "npm-run-all --parallel css-watch js-watch html-watch-pages move-file"
   },
   "version": "0.0.4",
   "dependencies": {
