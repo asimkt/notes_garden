@@ -16,7 +16,23 @@ $shadow: $card-drop-shadow;
 
 $body-background-color: $bg-sub;
 
+$radius-large: 8px;
+
+// Sizes
+$size-1: 2.441rem;
+$size-2: 1.953rem;
+$size-3: 1.563rem;
+$size-4: 1.25rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.8rem;
 
 // 3. Bulma component customization
+// tags
 $tag-background-color: $bg-main;
 $tag-radius: 8px;
+// input
+$input-shadow: none;
+// box
+$box-shadow: none;
+$box-padding: 1rem;

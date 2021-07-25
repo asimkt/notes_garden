@@ -20,31 +20,42 @@ a.tag:hover {
 }
 
 // Titles using major third
-.title.is-1 {
-    // font-size: 2.488rem;
-    font-size: 2.441rem;
+.title.is-1, .is-size-1 {
+    font-size: $size-1; //39.06px
+    font-weight: $weight-semibold;
 }
-.title.is-2 {
-    // font-size: 2.074rem;
-    font-size: 1.953rem;
+.title.is-2, .is-size-2 {
+    font-size: $size-2; //31.25px
+    font-weight: $weight-semibold;
 }
-.title.is-3 {
-    // font-size: 1.728rem;
-    font-size: 1.563rem;
+.title.is-3, .is-size-3 {
+    font-size: $size-3; //25.00px
+    font-weight: $weight-semibold;
 }
-.title.is-4 {
-    // font-size: 1.44rem;
-    font-size: 1.25rem;
+.title.is-4, .is-size-4 {
+    font-size: $size-4; //20.00px
+    font-weight: $weight-semibold;
 }
-.title.is-5 {
-    // font-size: 1.2rem;
-    font-size: 1rem;
+.title.is-5, .is-size-5 {
+    font-size: $size-5; //20.00px
+    font-weight: normal;
 }
-.title.is-6 {
-    // font-size: 1rem;
-    font-size: 0.8rem;
+.title.is-6, .is-size-6 {
+    font-size: $size-6; //16px
+    font-weight: $weight-semibold;
 }
-.title.is-7 {
-    // font-size: 0.833rem;
-    font-size: 0.64rem;
+.is-para {
+    font-size: $size-6; //16px
+    font-weight: normal;
+}
+.is-para-small, .is-size-7 {
+    font-size: $size-7; //12.80px
+    font-weight: normal;
+}
+.is-title-uppercase {
+    font-size: $size-7; //12.80px
+    font-weight: $weight-semibold;
+    text-transform: uppercase;
+    color: $text-sub;
+    margin-bottom: 8px;
 }

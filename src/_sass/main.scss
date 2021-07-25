@@ -2,16 +2,19 @@
 
 // Customization
 
-// 1. Import the initial variables
+// Import the initial variables
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
 
-// 2. Set your own initial variables
+// Set your own initial variables
 @import "./brand";
 
-// 3. Bulma variables overwrites with our brand variables
+// Bulma variables overwrites with our brand variables
 @import "./bulma_overwrites";
 
-// 4. Import the rest of Bulma
+// Import digital garden specific overwrites. This includes not so scalable styles.
+@import "./components/box";
+
+// Import the rest of Bulma
 @import "../../node_modules/bulma/bulma";
 
 // // Import only what you need from Bulma

@@ -1,0 +1,14 @@
+.box  {
+    cursor: pointer;
+    transition: box-shadow $transition-speed;
+}
+.box:hover{
+    box-shadow: $card-drop-shadow;
+}
+.box h4{
+    margin-bottom: 4px;
+    transition: color $transition-speed;
+}
+.box:hover h4 {
+    color: $link;
+}
