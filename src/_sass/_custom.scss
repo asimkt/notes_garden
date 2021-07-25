@@ -5,10 +5,18 @@
     padding-right: 1em;
 }
 
+a.tag {
+    border: $border-transparent;
+    transition: all $transition-speed;    
+}
 a.tag:hover {
-    border: $border;
+    border: $border-value;
     text-decoration: none;
     color: $link;
+}
+
+.tags.are-medium .tag:not(.is-normal):not(.is-large) {
+    font-size: 0.8rem;
 }
 
 // Titles using major third
