@@ -11,16 +11,16 @@
 // Bulma variables overwrites with our brand variables
 @import "./bulma_overwrites";
 
+// Import the rest of Bulma
+@import "../../node_modules/bulma/bulma";
+
 // Import digital garden specific overwrites. This includes not so scalable styles.
 @import "./components/box";
 @import "./components/search-form";
 @import "./components/note_cards";
 @import "./components/tag";
 @import "./components/note";
-
-
-// Import the rest of Bulma
-@import "../../node_modules/bulma/bulma";
+@import "./components/back-btn";
 
 // // Import only what you need from Bulma
 // @import "../node_modules/bulma/sass/utilities/_all.sass";

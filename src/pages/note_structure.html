@@ -14,9 +14,10 @@
 
 <body>
   <include src='../partials/navigation.html'/>
-  <section class="section">
+  <section class="section is-note">
     <div class="columns is-centered">
-      <div class="column is-half">
+      <div class="column is-half is-primary-content">
+        <include src='../partials/back-btn.html'/>
         <div class="content">
           <h1>Welcome to my evergreen notes. </h1>
           <figure class="image is-fullwidth">
@@ -25,12 +26,8 @@
           <p>
             One of my favorite ways that creative people communicate is by “working with their garage door up,” to riff on a passage from Robin Sloan (below). This is the opposite of the Twitter account which mostly posts announcements of finished work.
           </p>
-          <div class="tags are-medium are-white">
-            <a class="tag">Malayalam</a>
-            <a class="tag">Mac Apps</a>
-            <a class="tag">Open Source</a>
         </div>
-        </div>
+        <include src='../partials/story-tags.html'/>
         <include src='../partials/note-cards-grid.html'/>
       </div>
     </div>

@@ -1,4 +1,18 @@
+.section.is-note .column.is-primary-content {
+    background: $bg-main;
+    border-radius: 8px;
+    position: relative;
+}
+.section.is-note .box {
+    background: $bg-sub;
+}
+
 .content .image.is-fullwidth {
     margin-left: 0;
     margin-right: 0;
+}
+@include tablet {
+    .section.is-note .column.is-primary-content {
+        padding: 40px 116px;
+    }
 }
