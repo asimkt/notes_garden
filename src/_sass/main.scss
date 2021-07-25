@@ -13,6 +13,7 @@
 
 // Import digital garden specific overwrites. This includes not so scalable styles.
 @import "./components/box";
+@import "./components/search-form";
 
 // Import the rest of Bulma
 @import "../../node_modules/bulma/bulma";

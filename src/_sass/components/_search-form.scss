@@ -1,0 +1,14 @@
+.search-suggestions {
+    background: $bg-main;
+    padding: $size-6 $size-2;
+}
+.search-suggestions.content a {
+    color: $text-main;
+    transition: color $transition-speed;
+}
+.search-suggestions.content li:hover a {
+    color: $link;
+}
+.search-suggestions.content li + li {
+    margin-top: 0.5em;
+}

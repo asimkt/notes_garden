@@ -20,14 +20,23 @@
         style="margin-right: 16px;">
       <strong> Digital Garden</strong>
     </a>
-
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
+    <!-- TODO: Show darkmode in mobile -->
+    <div class="navbar-item is-hidden">
+      <div class="buttons">
+        <a class="button is-text">
+          <span class="icon is-small">
+            <img src="../img/sun.svg">
+          </span>
+        </a>
+      </div>
+    </div>
   </div>
-
+  
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item">
@@ -44,7 +53,7 @@
       </a>
     </div>
 
-    <div class="navbar-end">
+    <div class="navbar-end is-hidden-mobile">
       <div class="navbar-item">
         <div class="buttons">
           <a class="button is-text">
@@ -63,7 +72,6 @@
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  debugger;
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
 
@@ -82,8 +90,7 @@
       });
     });
   }
-
-  });
+});
 </script>
   <section class="section">
     <div class="columns is-centered">
