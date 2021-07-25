@@ -58,14 +58,16 @@
     "url": "git+https://github.com/jgthms/bulma-start.git"
   },
   "scripts": {
-    "css-build": "node-sass src/_sass/main.scss css/main.css",
+    "css-build": "node-sass src/_sass/main.scss build/css/main.css",
     "css-deploy": "npm run css-build && npm run css-postcss",
-    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
+    "css-postcss": "postcss --use autoprefixer --output build/css/main.css build/css/main.css",
     "css-watch": "npm run css-build -- --watch",
     "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel src/_javascript --out-dir lib",
+    "js-build": "babel src/_javascript --out-dir build/lib",
     "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
+    "html-pages": "html-import-partials src/pages/*.html -o build/pages",
+    "html-watch-pages": "npm run html-pages  -- --watch",
+    "start": "npm-run-all --parallel css-watch js-watch html-watch-pages"
   },
   "version": "0.0.4",
   "dependencies": {

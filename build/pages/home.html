@@ -13,7 +13,50 @@
 </head>
 
 <body>
-  <include src='../partials/navigation.html'/>
+  <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://google.com">
+      <img src="https://cdn.pixabay.com/photo/2016/08/25/07/30/red-1618916_1280.png" width="28" height="28"
+        style="margin-right: 16px;">
+      <strong> Digital Garden</strong>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        About
+      </a>
+      <a class="navbar-item">
+        Notes
+      </a>
+      <a class="navbar-item">
+        Essays
+      </a>
+      <a class="navbar-item">
+        Library
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-text">
+            <span class="icon is-small">
+              <img src="../img/sun.svg">
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
   <section class="section">
     <div class="columns is-centered">
       <div class="column is-half">
