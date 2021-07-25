@@ -1,0 +1,8 @@
+.tags.are-medium .tag:not(body) {
+    padding: 8px 16px;
+    height: 2rem;
+}
+
+.tags.are-medium.are-white .tag:not(body) {
+    background: $bg-sub;
+}
